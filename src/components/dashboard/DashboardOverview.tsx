@@ -28,7 +28,7 @@ export function StatSummaryCards(props: {
       box: "bg-[#e6f7ef] text-[#0d8a54]",
     },
     {
-      label: "Mood Board",
+      label: "Design Shortlist",
       value: props.moodBoard,
       icon: IconPalette,
       box: "bg-[#f1e8ff] text-[#7c3aed]",

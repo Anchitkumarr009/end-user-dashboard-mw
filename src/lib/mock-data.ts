@@ -139,6 +139,20 @@ export const moodBoard: MoodBoardItem[] = [
     imageUrl:
       "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80",
   },
+  {
+    id: "m3",
+    title: "Traditional karva chauth palms",
+    occasion: "Karva Chauth",
+    imageUrl:
+      "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&q=80",
+  },
+  {
+    id: "m4",
+    title: "Glitter party minimal",
+    occasion: "Party",
+    imageUrl:
+      "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=600&q=80",
+  },
 ];
 
 export const trials: TrialSession[] = [

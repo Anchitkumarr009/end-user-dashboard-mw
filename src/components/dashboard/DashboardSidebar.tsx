@@ -35,7 +35,7 @@ const primaryNav: {
 ];
 
 const secondaryNav: { href: string; label: string }[] = [
-  { href: "/account/trials", label: "Trial sessions" },
+  { href: "/account/trials", label: "Our Socials" },
   { href: "/account/enquiries", label: "Terms of Service" },
   { href: "/account/enquiries", label: "Privacy Policy" },
   { href: "/account/support", label: "Customer Support" },
