@@ -11,10 +11,12 @@ import {
   IconPalette,
   IconScale,
   IconStar,
+  IconWallet,
 } from "@/components/dashboard/icons";
 
 const links: { href: string; label: string; icon: React.ComponentType<{ className?: string }> }[] = [
   { href: "/account", label: "Overview", icon: IconLayout },
+  { href: "/account/wallet", label: "Wallet", icon: IconWallet },
   { href: "/account/shortlist", label: "Shortlist", icon: IconHeart },
   { href: "/account/mood-board", label: "Mood", icon: IconPalette },
   { href: "/account/bookings", label: "Bookings", icon: IconCalendar },
@@ -26,7 +28,7 @@ const links: { href: string; label: string; icon: React.ComponentType<{ classNam
 
 function active(pathname: string, href: string) {
   if (href === "/account") return pathname === "/account";
-  return pathname.startsWith(href);
+  return pathname === href || pathname.startsWith(`${href}/`);
 }
 
 export function MobileAccountNav() {

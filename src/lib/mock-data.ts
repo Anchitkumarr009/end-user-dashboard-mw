@@ -6,6 +6,8 @@ import type {
   MoodBoardItem,
   Review,
   TrialSession,
+  WalletOffer,
+  WalletTransaction,
 } from "./types";
 
 export const artists: Artist[] = [
@@ -201,6 +203,99 @@ export const favouriteImages: FavouriteImage[] = [
     caption: "Minimal engagement",
     imageUrl:
       "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=600&q=80",
+  },
+];
+
+/** Base wallet balance before any coupons redeemed in-browser (demo). */
+export const walletBalanceInr = 2450;
+
+export const walletExpenseSummary = {
+  /** Money out via wallet for bookings, this calendar month */
+  thisMonthInr: 18200,
+  /** All-time spend through wallet */
+  lifetimeSpendInr: 64700,
+  /** Cashback & promos credited to wallet */
+  creditsEarnedInr: 1200,
+};
+
+export const walletTransactions: WalletTransaction[] = [
+  {
+    id: "wt1",
+    type: "debit",
+    category: "booking",
+    title: "Booking payment",
+    subtitle: "Priya Sharma · Wedding",
+    amountInr: 18000,
+    createdAt: "2026-04-15T10:30:00",
+  },
+  {
+    id: "wt2",
+    type: "credit",
+    category: "cashback",
+    title: "Cashback",
+    subtitle: "MehndiWalaa rewards",
+    amountInr: 350,
+    createdAt: "2026-04-16T08:00:00",
+  },
+  {
+    id: "wt3",
+    type: "debit",
+    category: "booking",
+    title: "Advance for engagement",
+    subtitle: "Sana Mirza · Engagement",
+    amountInr: 7000,
+    createdAt: "2026-04-22T14:12:00",
+  },
+  {
+    id: "wt4",
+    type: "credit",
+    category: "refund",
+    title: "Refund",
+    subtitle: "Trial slot cancelled",
+    amountInr: 2500,
+    createdAt: "2026-04-28T11:05:00",
+  },
+  {
+    id: "wt5",
+    type: "credit",
+    category: "top_up",
+    title: "Wallet top-up",
+    subtitle: "UPI · ****0421",
+    amountInr: 5000,
+    createdAt: "2026-05-02T19:40:00",
+  },
+  {
+    id: "wt6",
+    type: "debit",
+    category: "booking",
+    title: "Booking hold",
+    subtitle: "Zara Sheikh · enquiry deposit",
+    amountInr: 2000,
+    createdAt: "2026-05-10T09:00:00",
+  },
+];
+
+export const walletOffers: WalletOffer[] = [
+  {
+    id: "o1",
+    title: "Bridal season cashback",
+    description: "Earn 5% back to your wallet on completed bookings above ₹25,000.",
+    highlight: "gold",
+    expiresAt: "2026-06-30",
+  },
+  {
+    id: "o2",
+    title: "First booking perk",
+    description: "Use code FIRST1000 on first wallet top-up of ₹5,000 or more.",
+    code: "FIRST1000",
+    highlight: "green",
+    expiresAt: "2026-12-31",
+  },
+  {
+    id: "o3",
+    title: "Refer an artist",
+    description: "₹250 wallet credit when your referral completes their first booking.",
+    highlight: "gold",
   },
 ];
 

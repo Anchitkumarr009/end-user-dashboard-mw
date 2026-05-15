@@ -80,3 +80,22 @@ export type FavouriteImage = {
   caption: string;
   imageUrl: string;
 };
+
+export type WalletTransaction = {
+  id: string;
+  type: "credit" | "debit";
+  category: "booking" | "refund" | "coupon" | "cashback" | "top_up";
+  title: string;
+  subtitle?: string;
+  amountInr: number;
+  createdAt: string;
+};
+
+export type WalletOffer = {
+  id: string;
+  title: string;
+  description: string;
+  code?: string;
+  expiresAt?: string;
+  highlight?: "gold" | "green";
+};
